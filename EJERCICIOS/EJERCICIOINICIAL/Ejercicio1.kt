@@ -37,11 +37,11 @@ fun main(){
 }
 
 fun hacerEleccionUno(sc:Scanner) {
-//    MIRAR LA CLASE CALENDAAAAAAAAAAAAAAAAAAAAAAAAR
     println("Dime el dia:")
     val dia=sc.nextInt();
     println("Dime el mes:")
-    val mes=sc.nextInt();
+    var mes=sc.nextInt();
+    mes=mes-1;
     println("Dime el año:")
     val anio=sc.nextInt();
 
@@ -50,10 +50,11 @@ fun hacerEleccionUno(sc:Scanner) {
     val diaSemana:Int = calendar.get(Calendar.DAY_OF_WEEK);
     println(diaSemana)
 //    println(Calendar.SATURDAY)
-    if(diaSemana>=0 || diaSemana<=7){
-        println("El dia elegido era Laborable")
-    }else if(diaSemana==8 || diaSemana==9){
+    if((diaSemana==Calendar.SUNDAY || diaSemana==Calendar.FRIDAY)){
         println("El dia elegido no Laborable")
+    }else {
+        println("El dia elegido era Laborable")
+        
     }
 }
 
