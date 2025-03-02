@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.JugandoALosDados" parent="Theme.Material3.DayNight.NoActionBar">
+<!--        .NoActionBar , lo quite ya que en las capturas y el video aparece esto arriba-->
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.JugandoALosDados" parent="Base.Theme.JugandoALosDados" />
+
+</resources>
